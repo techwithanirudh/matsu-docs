@@ -95,13 +95,13 @@
   --font-sans: Nunito, sans-serif;
   --font-serif: PT Serif, serif;
 
-  --shadow-xs: 0 2px 0 0 var(--border);
-  --shadow-sm: 0 2px 0 0 var(--border);
-  --shadow-md: 0 2px 0 0 var(--border);
-  --shadow-lg: 0 2px 0 0 var(--border);
-  --shadow-xl: 0 2px 0 0 var(--border);
-  --shadow-2xl: 0 2px 0 0 var(--border);
-  --shadow-3xl: 0 2px 0 0 var(--border);
+  --shadow-xs: 0 2px 0 0 var(--color-fd-border);
+  --shadow-sm: 0 2px 0 0 var(--color-fd-border);
+  --shadow-md: 0 2px 0 0 var(--color-fd-border);
+  --shadow-lg: 0 2px 0 0 var(--color-fd-border);
+  --shadow-xl: 0 2px 0 0 var(--color-fd-border);
+  --shadow-2xl: 0 2px 0 0 var(--color-fd-border);
+  --shadow-3xl: 0 2px 0 0 var(--color-fd-border);
 }
 
 @layer base {
@@ -205,9 +205,9 @@
 
 button[data-search-full] {
   background-color: var(--color-fd-background);
-  box-shadow: 0 2px 0 0 var(--color-fd-primary-border);
+  @apply shadow-primary;
 }
 
 [data-theme-toggle] {
-  box-shadow: 0 2px 0 0 var(--color-fd-primary-border);
+  @apply shadow-primary;
 }
