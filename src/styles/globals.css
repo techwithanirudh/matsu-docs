@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+@import "./fumadocs/matsu.css";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@source '../../node_modules/fumadocs-ui/dist/**/*.js';
+
+@theme {
+  --color-background: var(--color-fd-background);
+  --color-foreground: var(--color-fd-foreground);
+
+  --color-card: var(--color-fd-card);
+  --color-card-foreground: var(--color-fd-card-foreground);
+
+  --color-popover: var(--color-fd-popover);
+  --color-popover-foreground: var(--color-fd-popover-foreground);
+
+  --color-primary: var(--color-fd-primary);
+  --color-primary-foreground: var(--color-fd-primary-foreground);
+
+  --color-secondary: var(--color-fd-secondary);
+  --color-secondary-foreground: var(--color-fd-secondary-foreground);
+
+  --color-muted: var(--color-fd-muted);
+  --color-muted-foreground: var(--color-fd-muted-foreground);
+
+  --color-accent: var(--color-fd-accent);
+  --color-accent-foreground: var(--color-fd-accent-foreground);
+
+  --color-destructive: var(--color-fd-destructive);
+  --color-destructive-border: var(--color-fd-destructive-border);
+  --color-destructive-foreground: var(--color-fd-destructive-foreground);
+
+  --color-sidebar: var(--color-fd-sidebar);
+  --color-sidebar-foreground: var(--color-fd-sidebar-foreground);
+  --color-sidebar-primary: var(--color-fd-sidebar-primary);
+  --color-sidebar-primary-foreground: var(--color-fd-sidebar-primary-foreground);
+  --color-sidebar-accent: var(--color-fd-sidebar-accent);
+  --color-sidebar-accent-foreground: var(--color-fd-sidebar-accent-foreground);
+  --color-sidebar-border: var(--color-fd-sidebar-border);
+  --color-sidebar-ring: var(--color-fd-sidebar-ring);
+
+  --color-border: var(--color-fd-border);
+  --color-input: var(--color-fd-input);
+  --color-ring: var(--color-fd-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

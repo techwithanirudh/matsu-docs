@@ -1,48 +1,7 @@
-@import "tailwindcss";
-@import "fumadocs-ui/css/neutral.css";
-@import "fumadocs-ui/css/preset.css";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
-
-@source '../../node_modules/fumadocs-ui/dist/**/*.js';
-
-@theme {
-  --color-background: var(--color-fd-background);
-  --color-foreground: var(--color-fd-foreground);
-
-  --color-card: var(--color-fd-card);
-  --color-card-foreground: var(--color-fd-card-foreground);
-
-  --color-popover: var(--color-fd-popover);
-  --color-popover-foreground: var(--color-fd-popover-foreground);
-
-  --color-primary: var(--color-fd-primary);
-  --color-primary-foreground: var(--color-fd-primary-foreground);
-
-  --color-secondary: var(--color-fd-secondary);
-  --color-secondary-foreground: var(--color-fd-secondary-foreground);
-
-  --color-muted: var(--color-fd-muted);
-  --color-muted-foreground: var(--color-fd-muted-foreground);
-
-  --color-accent: var(--color-fd-accent);
-  --color-accent-foreground: var(--color-fd-accent-foreground);
-
-  --color-destructive: var(--color-fd-destructive);
-  --color-destructive-border: var(--color-fd-destructive-border);
-  --color-destructive-foreground: var(--color-fd-destructive-foreground);
-
-  --color-border: var(--color-fd-border);
-  --color-input: var(--color-fd-input);
-  --color-ring: var(--color-fd-ring);
-}
-
 :root {
   --radius: 0.625rem;
 
   --color-fd-background: oklch(0.91 0.048 83.6);
-
   --color-fd-foreground: oklch(0.41 0.077 78.9);
 
   --color-fd-card: oklch(0.92 0.042 83.6);
@@ -66,16 +25,10 @@
   --color-fd-destructive: oklch(0.63 0.24 29.2);
   --color-fd-destructive-foreground: oklch(0.97 0.018 0);
   --color-fd-destructive-border: oklch(0.43 0.24 29.2);
-  
+
   --color-fd-border: oklch(0.74 0.063 80.8);
   --color-fd-input: oklch(0.74 0.063 80.8);
   --color-fd-ring: oklch(0.51 0.077 74.3);
-
-  --color-fd-chart-1: oklch(0.66 0.19 41.6);
-  --color-fd-chart-2: oklch(0.68 0.16 184.9);
-  --color-fd-chart-3: oklch(0.48 0.09 210.9);
-  --color-fd-chart-4: oklch(0.85 0.19 85.4);
-  --color-fd-chart-5: oklch(0.74 0.19 66.3);
 
   --color-fd-sidebar: oklch(0.87 0.059 83.7);
   --color-fd-sidebar-foreground: oklch(0.41 0.077 78.9);
@@ -87,7 +40,6 @@
   --color-fd-sidebar-ring: oklch(0.71 0.005 0);
 
   --color-fd-primary-border: oklch(0.59 0.096 111.8);
-
 }
 
 .dark {
@@ -129,51 +81,8 @@
   --color-fd-sidebar-ring: oklch(0.552 0.016 285.938);
 }
 
-#nd-sidebar {
-  background-color: var(--color-fd-sidebar);
-}
-
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-
-  --radius-xl: calc(var(--radius) + 4px);
-
-  --color-fd-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-
-  --font-weight-light: 700;
-  --font-weight-normal: 700;
-  --font-weight-medium: 700;
-  --font-weight-semibold: 700;
-  --font-sans: Nunito, sans-serif;
-  --font-serif: PT Serif, serif;
-
-  --shadow-xs: 0 2px 0 0 var(--border);
-  --shadow-sm: 0 2px 0 0 var(--border);
-  --shadow-md: 0 2px 0 0 var(--border);
-  --shadow-lg: 0 2px 0 0 var(--border);
-  --shadow-xl: 0 2px 0 0 var(--border);
-  --shadow-2xl: 0 2px 0 0 var(--border);
-  --shadow-3xl: 0 2px 0 0 var(--border);
-
-  --color-primary-border: var(--primary-border);
-}
-
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
   body {
-    @apply bg-background text-foreground;
     font-weight: var(--font-weight-bold);
   }
 
@@ -223,4 +132,64 @@
     height: 100dvh;
     pointer-events: none;
   }
+}
+
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+
+    --font-weight-light: 700;
+    --font-weight-normal: 700;
+    --font-weight-medium: 700;
+    --font-weight-semibold: 700;
+    --font-sans: Nunito, sans-serif;
+    --font-serif: PT Serif, serif;
+
+    --shadow-xs: 0 2px 0 0 var(--border);
+    --shadow-sm: 0 2px 0 0 var(--border);
+    --shadow-md: 0 2px 0 0 var(--border);
+    --shadow-lg: 0 2px 0 0 var(--border);
+    --shadow-xl: 0 2px 0 0 var(--border);
+    --shadow-2xl: 0 2px 0 0 var(--border);
+    --shadow-3xl: 0 2px 0 0 var(--border);
+  
+    --color-fd-primary-border: var(--primary-border);
+}
+
+.prose {
+  --tw-prose-body: color-mix(
+    in oklab,
+    var(--color-fd-foreground) 85%,
+    transparent
+  );
+  --tw-prose-headings: color-mix(
+    in oklab,
+    var(--color-fd-foreground) 85%,
+    transparent
+  );
+  --tw-prose-links: var(--color-fd-primary);
+  --tw-prose-code: var(--color-fd-primary);
+}
+
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  border: none;
+  background-color: color-mix(
+    in oklab,
+    var(--color-fd-primary) 10%,
+    transparent
+  );
+}
+
+#nd-sidebar {
+  background-color: var(--color-fd-sidebar);
+}
+
+#nd-sidebar > div {
+  border-color: transparent;
+}
+
+button[data-search-full] {
+  background-color: var(--color-fd-background);
 }
