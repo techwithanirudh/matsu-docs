@@ -37,7 +37,9 @@
   --color-sidebar: var(--color-fd-sidebar);
   --color-sidebar-foreground: var(--color-fd-sidebar-foreground);
   --color-sidebar-primary: var(--color-fd-sidebar-primary);
-  --color-sidebar-primary-foreground: var(--color-fd-sidebar-primary-foreground);
+  --color-sidebar-primary-foreground: var(
+    --color-fd-sidebar-primary-foreground
+  );
   --color-sidebar-accent: var(--color-fd-sidebar-accent);
   --color-sidebar-accent-foreground: var(--color-fd-sidebar-accent-foreground);
   --color-sidebar-border: var(--color-fd-sidebar-border);
@@ -46,6 +48,8 @@
   --color-border: var(--color-fd-border);
   --color-input: var(--color-fd-input);
   --color-ring: var(--color-fd-ring);
+
+  --color-primary-border: var(--color-fd-primary-border);
 }
 
 @layer base {
