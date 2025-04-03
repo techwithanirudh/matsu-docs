@@ -204,10 +204,10 @@
 }
 
 button[data-search-full] {
-  background-color: var(--color-fd-background);
-  @apply shadow-primary;
+  background-color: var(--color-fd-background)!important;
+  box-shadow: 0 2px 0 0 var(--color-fd-primary-border);
 }
 
 [data-theme-toggle] {
-  @apply shadow-primary;
+  box-shadow: 0 2px 0 0 var(--color-fd-primary-border);
 }
