@@ -19,7 +19,10 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${nunito.variable} ${ptSans.variable}`} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
-        <RootProvider>
+        <RootProvider theme={{
+          enabled: false,
+          forcedTheme: 'light'
+        }}>
           <div className="texture" />
           {children}
         </RootProvider>
