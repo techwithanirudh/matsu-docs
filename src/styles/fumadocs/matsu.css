@@ -172,7 +172,7 @@
   --tw-prose-code: var(--color-fd-primary);
 }
 
-.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+.prose :where(code):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
   border: none;
   background-color: color-mix(
     in oklab,
@@ -182,7 +182,7 @@
 }
 
 #nd-sidebar {
-  background-color: var(--color-fd-sidebar)!important;
+  background-color: var(--color-fd-sidebar) !important;
   --color-fd-foreground: var(--color-fd-sidebar-foreground) !important;
 
   --color-fd-primary: var(--color-fd-sidebar-primary) !important;
@@ -204,7 +204,7 @@
 }
 
 button[data-search-full] {
-  background-color: var(--color-fd-background)!important;
+  background-color: var(--color-fd-background) !important;
   box-shadow: 0 2px 0 0 var(--color-fd-primary-border);
 }
 

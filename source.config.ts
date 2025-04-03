@@ -12,6 +12,6 @@ export default defineConfig({
         dark: 'vesper',
         light: 'vitesse-light',
       },
-    }
+    },
   },
 });
