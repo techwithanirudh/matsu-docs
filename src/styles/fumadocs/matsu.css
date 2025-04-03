@@ -182,7 +182,7 @@
 }
 
 #nd-sidebar {
-  background-color: var(--color-fd-sidebar);
+  background-color: var(--color-fd-sidebar)!important;
   --color-fd-foreground: var(--color-fd-sidebar-foreground) !important;
 
   --color-fd-primary: var(--color-fd-sidebar-primary) !important;
