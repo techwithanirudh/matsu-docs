@@ -1,8 +1,8 @@
 {
-    "aliases": {
-      "cn": "./lib/fumadocs/cn.ts",
-      "componentsDir": "./components/fumadocs",
-      "uiDir": "./components/fumadocs/ui",
-      "libDir": "./lib/fumadocs"
-    }
+  "aliases": {
+    "cn": "./src/lib/utils.ts",
+    "componentsDir": "./src/components",
+    "uiDir": "./src/components/ui",
+    "libDir": "./src/lib"
   }
+}

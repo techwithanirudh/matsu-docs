@@ -1,4 +1,4 @@
-import './global.css';
+import '@/styles/globals.css';
 import { RootProvider } from 'fumadocs-ui/provider';
 import { Nunito } from "next/font/google";
 import { PT_Sans } from "next/font/google";
