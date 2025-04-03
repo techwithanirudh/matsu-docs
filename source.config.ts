@@ -6,6 +6,12 @@ export const docs = defineDocs({
 
 export default defineConfig({
   mdxOptions: {
-    // MDX options
+    rehypeCodeOptions: {
+      inline: 'tailing-curly-colon',
+      themes: {
+        dark: 'vesper',
+        light: 'vitesse-light',
+      },
+    }
   },
 });
