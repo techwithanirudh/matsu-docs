@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import '@/styles/globals.css';
 import { RootProvider } from 'fumadocs-ui/provider';
 import { Nunito } from 'next/font/google';
@@ -19,10 +20,9 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${nunito.variable} ${ptSans.variable}`}
       suppressHydrationWarning
     >
-      <body className="flex min-h-screen flex-col">
+      <body className={cn("flex min-h-screen flex-col antialiased", nunito.variable, ptSans.variable)}>
         <RootProvider
           theme={{
             enabled: false,
