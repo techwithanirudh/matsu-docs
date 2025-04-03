@@ -71,6 +71,7 @@
   --color-fd-input: oklch(1 0 0 / 15%);
   --color-fd-ring: oklch(0.552 0.016 285.938);
 
+  /* todo: remove the sidebar variables as fd doesn't use them */
   --color-fd-sidebar: oklch(0.21 0.006 285.885);
   --color-fd-sidebar-foreground: oklch(0.985 0 0);
   --color-fd-sidebar-primary: oklch(0.488 0.243 264.376);
