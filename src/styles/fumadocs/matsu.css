@@ -192,3 +192,13 @@
 button[data-search-full] {
   background-color: var(--color-fd-background);
 }
+
+#nd-sidebar {
+    --color-fd-foreground: var(--color-fd-sidebar-foreground)!important;
+    --color-fd-background: var(--color-fd-sidebar)!important;
+    --color-fd-accent-foreground: var(--color-fd-sidebar-accent-foreground)!important;
+    --color-fd-accent: var(--color-fd-sidebar-accent)!important;
+    --color-fd-primary-foreground: var(--color-fd-sidebar-primary-foreground)!important;
+    --color-fd-primary: var(--color-fd-sidebar-primary)!important;
+    /* todo: complete */
+}
