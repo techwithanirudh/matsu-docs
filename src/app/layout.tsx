@@ -25,8 +25,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <body className={cn("flex min-h-screen flex-col antialiased", nunito.variable, ptSans.variable)}>
         <RootProvider
           theme={{
-            enabled: false,
-            forcedTheme: 'light',
+            enabled: true
           }}
         >
           <div className="texture" />

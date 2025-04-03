@@ -6,10 +6,7 @@ import { source } from '@/lib/source';
 const docsOptions: DocsLayoutProps = {
   ...baseOptions,
   tree: source.pageTree,
-  links: [linkItems[linkItems.length - 1]],
-  themeSwitch: {
-    enabled: false
-  }
+  links: [linkItems[linkItems.length - 1]]
 };
 
 export default function Layout({ children }: { children: ReactNode }) {

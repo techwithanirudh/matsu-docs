@@ -6,9 +6,6 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <HomeLayout
       {...baseOptions}
-      themeSwitch={{
-        enabled: false,
-      }}
     >
       {children}
     </HomeLayout>
