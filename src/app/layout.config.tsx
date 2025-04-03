@@ -1,7 +1,5 @@
-import Logo from '@/public/logo.png';
 import { LinkItemType } from 'fumadocs-ui/layouts/docs';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-import Image from 'next/image';
 
 export const logo = (
   <>
